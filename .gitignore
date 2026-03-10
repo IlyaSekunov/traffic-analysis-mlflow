@@ -1,0 +1,73 @@
+# Общие правила для Python проектов
+# ==========================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cookies
+pip-wheel-metadata/
+share/python-wheels/
+*.egg
+
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Конфигурационные файлы с чувствительными данными
+config.ini
+secrets.json
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Специфичные правила для папки regression
+# ==========================================
+regression/resources/
+regression/.ipynb_checkpoints/
+regression/__pycache__/
+regression/*.pyc
+regression/*.pyo
+regression/*.pyd
+
+# Папки с моделями и данными (если они есть)
+**/models/
+**/data/
+**/datasets/
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.model
