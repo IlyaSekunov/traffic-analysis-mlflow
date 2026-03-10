@@ -47,8 +47,7 @@ RANDOM_STATE = 42
 # Neural-network hyperparameters (FCN)
 # ---------------------------------------------------------------------------
 
-# Hidden layer sizes — edit this list to change depth / width
-HIDDEN_LAYERS = [128, 64, 32]   # small: only 8 input features
+HIDDEN_LAYERS = [256, 128, 64]   # fits well for 11 input features
 DROPOUT_RATE = 0.1          # low dropout — few features, model needs to memorise them
 LEARNING_RATE = 1e-3
 BATCH_SIZE = 32
@@ -62,5 +61,4 @@ EARLY_STOPPING_PATIENCE = 30
 MLFLOW_TRACKING_URI = "http://kamnsv.com:55000/"
 MLFLOW_EXPERIMENT_NAME = "LIne Regression HH"
 
-# Format: lastname_firstname_fcn
 MLFLOW_MODEL_NAME = "sekunov_ilya_fcn"
